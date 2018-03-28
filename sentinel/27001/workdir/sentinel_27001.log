@@ -1,0 +1,54 @@
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 3.2.11 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in sentinel mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 27001
+ |    `-._   `._    /     _.-'    |     PID: 23111
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+23111:X 27 Mar 19:34:54.256 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+23111:X 27 Mar 19:34:54.256 # Sentinel ID is b40e8552337397ff63ec100dd1df30c493598108
+23111:X 27 Mar 19:34:54.256 # +monitor master mymaster1 10.135.177.148 7001 quorum 2
+23111:X 27 Mar 19:34:54.256 # +monitor master mymaster2 10.135.177.148 7002 quorum 2
+23111:X 27 Mar 19:34:54.256 # +monitor master mymaster 127.0.0.1 6379 quorum 2
+23111:X 27 Mar 19:34:54.256 # +monitor master mymaster3 10.135.177.148 7003 quorum 2
+30904:X 28 Mar 23:24:17.380 # Creating Server TCP listening socket *:27001: bind: Address already in use
+23111:X 28 Mar 23:24:58.697 # User requested shutdown...
+23111:X 28 Mar 23:24:58.697 * Removing the pid file.
+23111:X 28 Mar 23:24:58.697 # Sentinel is now ready to exit, bye bye...
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 3.2.11 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in sentinel mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 27001
+ |    `-._   `._    /     _.-'    |     PID: 30990
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+30990:X 28 Mar 23:25:01.491 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+30990:X 28 Mar 23:25:01.501 # Sentinel ID is d21ac8c46856e5f1a6eb8e7df9557c46f43ca234
+30990:X 28 Mar 23:25:01.501 # +monitor master bigmaster1 10.135.177.148 7001 quorum 2
+30990:X 28 Mar 23:25:01.501 # +monitor master bigmaster3 10.135.177.148 7003 quorum 2
+30990:X 28 Mar 23:25:01.501 # +monitor master bigmaster2 10.135.177.148 7002 quorum 2
+30990:X 28 Mar 23:25:01.501 * +slave slave 10.135.177.148:7006 10.135.177.148 7006 @ bigmaster3 10.135.177.148 7003
+30990:X 28 Mar 23:25:01.507 * +slave slave 10.135.177.148:7005 10.135.177.148 7005 @ bigmaster2 10.135.177.148 7002
+30990:X 28 Mar 23:25:01.515 * +slave slave 10.135.177.148:7004 10.135.177.148 7004 @ bigmaster1 10.135.177.148 7001

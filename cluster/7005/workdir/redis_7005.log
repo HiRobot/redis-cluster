@@ -1,0 +1,45 @@
+21886:M 27 Mar 19:10:03.018 * No cluster configuration found, I'm 6142d3db0f6e5466d49b8ec5482c23ee1fee7260
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 3.2.11 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in cluster mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 7005
+ |    `-._   `._    /     _.-'    |     PID: 21886
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+21886:M 27 Mar 19:10:03.044 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+21886:M 27 Mar 19:10:03.044 # Server started, Redis version 3.2.11
+21886:M 27 Mar 19:10:03.044 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+21886:M 27 Mar 19:10:03.044 * The server is now ready to accept connections on port 7005
+21886:M 27 Mar 19:10:43.100 # configEpoch set to 5 via CLUSTER SET-CONFIG-EPOCH
+21886:M 27 Mar 19:10:43.224 # IP address for this node updated to 10.135.177.148
+21886:S 27 Mar 19:10:46.109 # Cluster state changed: ok
+21886:S 27 Mar 19:10:46.130 * Connecting to MASTER 10.135.177.148:7002
+21886:S 27 Mar 19:10:46.130 * MASTER <-> SLAVE sync started
+21886:S 27 Mar 19:10:46.130 * Non blocking connect for SYNC fired the event.
+21886:S 27 Mar 19:10:46.131 * Master replied to PING, replication can continue...
+21886:S 27 Mar 19:10:46.131 * Partial resynchronization not possible (no cached master)
+21886:S 27 Mar 19:10:46.132 * Full resync from master: 0b3e806ea4ff16be239df8ae39f9399f959d1ffe:1
+21886:S 27 Mar 19:10:46.232 * MASTER <-> SLAVE sync: receiving 77 bytes from master
+21886:S 27 Mar 19:10:46.232 * MASTER <-> SLAVE sync: Flushing old data
+21886:S 27 Mar 19:10:46.232 * MASTER <-> SLAVE sync: Loading DB in memory
+21886:S 27 Mar 19:10:46.232 * MASTER <-> SLAVE sync: Finished with success
+21886:S 27 Mar 19:10:46.233 * Background append only file rewriting started by pid 21937
+21886:S 27 Mar 19:10:46.301 * AOF rewrite child asks to stop sending diffs.
+21937:C 27 Mar 19:10:46.301 * Parent agreed to stop sending diffs. Finalizing AOF...
+21937:C 27 Mar 19:10:46.302 * Concatenating 0.00 MB of AOF diff received from parent.
+21937:C 27 Mar 19:10:46.302 * SYNC append only file rewrite performed
+21937:C 27 Mar 19:10:46.302 * AOF rewrite: 0 MB of memory used by copy-on-write
+21886:S 27 Mar 19:10:46.331 * Background AOF rewrite terminated with success
+21886:S 27 Mar 19:10:46.331 * Residual parent diff successfully flushed to the rewritten AOF (0.00 MB)
+21886:S 27 Mar 19:10:46.331 * Background AOF rewrite finished successfully

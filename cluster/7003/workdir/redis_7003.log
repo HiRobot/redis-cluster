@@ -1,0 +1,34 @@
+21882:M 27 Mar 19:10:03.008 * No cluster configuration found, I'm 4580c18b6150b5789d76858f73dc0f268931cf3b
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 3.2.11 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in cluster mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 7003
+ |    `-._   `._    /     _.-'    |     PID: 21882
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+21882:M 27 Mar 19:10:03.040 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+21882:M 27 Mar 19:10:03.040 # Server started, Redis version 3.2.11
+21882:M 27 Mar 19:10:03.040 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+21882:M 27 Mar 19:10:03.040 * The server is now ready to accept connections on port 7003
+21882:M 27 Mar 19:10:43.099 # configEpoch set to 3 via CLUSTER SET-CONFIG-EPOCH
+21882:M 27 Mar 19:10:43.223 # IP address for this node updated to 10.135.177.148
+21882:M 27 Mar 19:10:46.137 * Slave 10.135.177.148:7006 asks for synchronization
+21882:M 27 Mar 19:10:46.137 * Full resync requested by slave 10.135.177.148:7006
+21882:M 27 Mar 19:10:46.137 * Starting BGSAVE for SYNC with target: disk
+21882:M 27 Mar 19:10:46.138 * Background saving started by pid 21933
+21933:C 27 Mar 19:10:46.145 * DB saved on disk
+21933:C 27 Mar 19:10:46.145 * RDB: 0 MB of memory used by copy-on-write
+21882:M 27 Mar 19:10:46.231 * Background saving terminated with success
+21882:M 27 Mar 19:10:46.231 * Synchronization with slave 10.135.177.148:7006 succeeded
+21882:M 27 Mar 19:10:48.035 # Cluster state changed: ok

@@ -1,0 +1,120 @@
+2c2
+< # 
+---
+> 
+18c18
+< # 
+---
+> 
+22c22
+< # 
+---
+> 
+44c44
+< # 
+---
+> 
+51c51
+< # 
+---
+> 
+70c70
+< # 
+---
+> 
+89c89
+< # 
+---
+> 
+99c99
+< # 
+---
+> 
+107c107
+< # 
+---
+> 
+132c132
+< # 
+---
+> 
+151c151
+< # 
+---
+> 
+171c171
+< # 
+---
+> 
+196,224d195
+< # 
+< # 
+< #### my sentinel config #######
+< # 
+< # port pt_port
+< # 
+< # protected-mode no
+< # dir pt_dir
+< # daemonize yes
+< # 
+< # sentinel monitor mymaster1 pt_master_server1 pt_master_port1 2
+< # sentinel down-after-milliseconds mymaster1 60000
+< # sentinel failover-timeout mymaster1 180000
+< # sentinel parallel-syncs mymaster1 1
+< # 
+< # sentinel monitor mymaster2 pt_master_server2 pt_master_port2 2
+< # sentinel down-after-milliseconds mymaster2 60000
+< # sentinel failover-timeout mymaster2 180000
+< # sentinel parallel-syncs mymaster2 1
+< # 
+< # sentinel monitor mymaster3 pt_master_server3 pt_master_port3 2
+< # sentinel down-after-milliseconds mymaster3 60000
+< # sentinel failover-timeout mymaster3 180000
+< # sentinel parallel-syncs mymaster3 1
+< port 27002
+< protected-mode no
+< daemonize yes
+< dir /home/robot/redis-cluster/sentinel/27002/workdir
+< logfile /home/robot/redis-cluster/sentinel/27002/workdir/sentinel_27002.log
+227,238c198
+< ### add master 1
+< sentinel monitor bigmaster1 10.135.177.148 7001 2
+< sentinel down-after-milliseconds bigmaster1 60000
+< sentinel failover-timeout bigmaster1 180000
+< sentinel parallel-syncs bigmaster1 1
+< 
+< 
+< ### add master 2
+< sentinel monitor bigmaster2 10.135.177.148 7002 2
+< sentinel down-after-milliseconds bigmaster2 60000
+< sentinel failover-timeout bigmaster2 180000
+< sentinel parallel-syncs bigmaster2 1
+---
+> #### my sentinel config #######
+239a200
+> port pt_port
+241,245c202,204
+< ### add master 3
+< sentinel monitor bigmaster3 10.135.177.148 7003 2
+< sentinel down-after-milliseconds bigmaster3 60000
+< sentinel failover-timeout bigmaster3 180000
+< sentinel parallel-syncs bigmaster3 1
+---
+> protected-mode no
+> dir pt_dir
+> daemonize yes
+246a206,219
+> sentinel monitor mymaster1 pt_master_server1 pt_master_port1 2
+> sentinel down-after-milliseconds mymaster1 60000
+> sentinel failover-timeout mymaster1 180000
+> sentinel parallel-syncs mymaster1 1
+> 
+> sentinel monitor mymaster2 pt_master_server2 pt_master_port2 2
+> sentinel down-after-milliseconds mymaster2 60000
+> sentinel failover-timeout mymaster2 180000
+> sentinel parallel-syncs mymaster2 1
+> 
+> sentinel monitor mymaster3 pt_master_server3 pt_master_port3 2
+> sentinel down-after-milliseconds mymaster3 60000
+> sentinel failover-timeout mymaster3 180000
+> sentinel parallel-syncs mymaster3 1
